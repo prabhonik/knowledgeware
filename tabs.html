@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>KnowledgeWare - Widgets - Tabs</title>
+        <link rel="stylesheet" href="forall.css">
+        <script src="dropdown.js" defer></script>
+        <script src="https://kit.fontawesome.com/4a0da9e824.js" crossorigin="anonymous"></script>
+        <style>
+            h4{
+                text-decoration: none;
+                font-weight: 200;
+            }
+                        
+            /* Style the tab */
+            .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            border-radius: 0.5rem;
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+            background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+            background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            width: 75%;
+            border-radius: 0.35rem;
+            margin-top: 10px;
+            background-color: rgb(196, 218, 218);
+            line-height: 1.75rem;
+            text-align: justify;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="logodiv"><img src="KW.png" alt="Logo" id="logopic"></div>
+        <div class="add">
+            <div class="left">
+                <h2 class="sele">Selenium</h2>
+                <h2 class="certi">Certification Training</h2>
+                <div class="horline"></div>
+                <div class="option"><br>
+                    <p class="options">Live Instructor led Online Training</p>
+                    <p class="options2">Weekend Classes</p><br>
+                    <p class="options">Regular Assignments</p>
+                    <p class="options2">Lifetime access to Sessioin Recordings</p>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="join">
+                    <a href="tel:8698989276" class="joinref">JOIN NOW</a>
+                </div>
+                <div class="call"><a class="remove" href="tel:8698989276">Call: 8698989276</a></div>
+            </div>
+        </div>
+        <div class="subheading"><h1 id=textb>Tabs</h1></div>
+
+        <div class="sidenav">
+            <button class="dropdownbtn">Elements<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="index.html">Text Box</a>
+                <a href="check.html">Check Box</a>
+                <a href="radio.html">Radio Button</a>
+                <a href="web.html">X-Path</a>
+                <a href="button.html">Buttons</a>
+                <a href="links.html">Links</a>
+                <a href="broken.html">Broken Links - Images</a>
+                <a href="updown.html">Upload and Download</a>
+                <a href="dynamic.html">Dynamic Properties</a>
+            </div>
+            <button class="dropdownbtn">Forms<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="practiceform.html">Practice Form</a>
+            </div>
+            <button class="dropdownbtn">Dynamic X-Path<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="dynamicXpath.html">Dynamic X-Path</a>
+            </div>
+            <button class="dropdownbtn">Alerts, Frame & Windows<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="window.html">Browser Window</a>
+                <a href="alerts.html">Alerts</a>
+                <a href="frames.html">Frames</a>
+                <a href="nestedframes.html">Nested Frames</a>
+                <a href="modal.html">Modal Dialogs</a>
+            </div>
+            <button class="dropdownbtn">Widgets<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="datepicker.html">Data Picker</a>
+                <a href="#">Tabs</a>
+                <a href="tooltips.html">Tool Tips</a>
+                <a href="menu.html">Menu</a>
+                <a href="menu.html">Select Menu</a>
+            </div>
+            <button class="dropdownbtn">Quiz<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="quiz.html">Example Quiz</a>
+                <a href="javaquiz.html">Java Primitive Quiz</a>
+                <a href="ifquiz.html">Java If Statement Quiz</a>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            <h4>Details about KnowledgeWare</h4>
+            <div class="tab">
+                <button class="tablinks" onclick="openoption(event, 'intro')">Intro</button>
+                <button class="tablinks" onclick="openoption(event, 'origin')">Origin</button>
+                <button class="tablinks" onclick="openoption(event, 'mantra')">Our Mantra</button>
+            </div>
+              
+            <div id="intro" class="tabcontent">
+                <h3>Introduction</h3>
+                <p class="info">It gives me great pleasure to share with you, through this column, updates, events, developments that have taken place in your Institute since the beginning of this year. <br>At KnowledgeWaretechnical courses are coupled with real time projects to enable students grasp complete subject knowledge and be ready to start jobs in IT industry from day one.
+                </p>
+            </div>
+            
+            <div id="origin" class="tabcontent">
+                <h3>Origin</h3>
+                <p class="info">KnowledgeWare was a software company headquartered in Atlanta, Georgia co-founded by James Martin and run by Fran Tarkenton. It produced a Computer Aided Software Engineering (CASE) tool called IEW (Information Engineering Workbench) and a subsequent enhancement ADW (Application Development Workbench). These products contained 4 modules known as 'workstations': Planning, Analysis, Design, & Construction. KnowledgeWare was sold to Sterling Software in 1994, which was in its turn acquired by Computer Associates.<br>
+                Tarkenton is credited with having coined, "A fool with a tool is a faster fool" while offering classes at their Peach Tree headquarters.<br>
+                Tarkenton, Don Addington and other executives were eventually involved in legal actions brought by the SEC for engaging in a fraudulent scheme to inflate KnowledgeWare's financial results to meet sales and earnings projections.</p> 
+            </div>
+            
+            <div id="mantra" class="tabcontent">
+                <h3 class="info">Our Mantra</h3>
+                <p>OUR MANTRA IS "QUALITY" AND THIS IS REFLECTED IN THE WAY WE TRAIN , IN THE WAY WE FUNCTION AND MORE SO IN YOUR NAME - KNOWLEDGEWARE<br>
+                KnowledgeWare, a leading IT Training provider, provides the full gamut of training methodologies and real-time learning experience to deliver integrated learning solutions. Here quality comes First and being the Best at what we do is our way of life. KnowledgeWare is highly recommended by corporate across Pune as source of good quality candidates.
+                </p>
+            </div>
+            
+            <script>
+                function openoption(evt, OptionName) {
+                  var i, tabcontent, tablinks;
+                  tabcontent = document.getElementsByClassName("tabcontent");
+                  for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                  }
+                  tablinks = document.getElementsByClassName("tablinks");
+                  for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                  }
+                  document.getElementById(OptionName).style.display = "block";
+                  evt.currentTarget.className += " active";
+                }
+                </script>
+
+        </div>
+    </body>
+</html>

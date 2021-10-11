@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>KnowledgeWare - Forms - Practice Form</title>
+        <link rel="stylesheet" href="practiceform.css">
+        <link rel="stylesheet" href="forall.css">
+        <script src="https://kit.fontawesome.com/4a0da9e824.js" crossorigin="anonymous"></script>
+        <script src="dropdown.js" defer></script>
+        <script src="practiceform.js" defer></script>
+        <script type="text/javascript">
+            var citiesByState = {
+            Haryana: ["Gurugram","Panipat","Ambala","Faridabad"],
+            Karnataka: ["Bangalore","Mysore","Udupi Mangalore","Hibbali","Dharward"],
+            Maharashtra: ["Mumbai","Pune","Nagpur"],
+            NCR: ["Delhi","Ghaziabad","Noida"],
+            Rajasthan: ["Jodhpur","Jaipur","Udaipur","Jaisalmer"],
+            UttarPradesh: ["Lucknow","Kanpur","Ayodhya","Gorakhpur"]
+            }
+            function makeSubmenu(value) {
+            if(value.length==0) document.getElementById("citySelect").innerHTML = "<option></option>";
+            else {
+            var citiesOptions = "";
+            for(cityId in citiesByState[value]) {
+            citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+            }
+            document.getElementById("citySelect").innerHTML = citiesOptions;
+            }
+            }
+            function resetSelection() {
+            document.getElementById("countrySelect").selectedIndex = 0;
+            document.getElementById("citySelect").selectedIndex = 0;
+            }
+            </script>
+    </head>
+    <body>
+        <div class="logodiv"><img src="KW.png" alt="Logo" id="logopic"></div>
+        <div class="add">
+            <div class="left">
+                <h2 class="sele">Selenium</h2>
+                <h2 class="certi">Certification Training</h2>
+                <div class="horline"></div>
+                <div class="option"><br>
+                    <p class="options">Live Instructor led Online Training</p>
+                    <p class="options2">Weekend Classes</p><br>
+                    <p class="options">Regular Assignments</p>
+                    <p class="options2">Lifetime access to Sessioin Recordings</p>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="join">
+                    <a href="tel:8698989276" class="joinref">JOIN NOW</a>
+                </div>
+                <div class="call"><a class="remove" href="tel:8698989276">Call: 8698989276</a></div>
+            </div>
+        </div>
+        <div class="subheading"><h1 id=textb>Practice Form</h1></div>
+
+        <div class="sidenav">
+            <button class="dropdownbtn">Elements<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="index.html">Text Box</a>
+                <a href="check.html">Check Box</a>
+                <a href="radio.html">Radio Button</a>
+                <a href="web.html">X-Path</a>
+                <a href="button.html">Buttons</a>
+                <a href="links.html">Links</a>
+                <a href="broken.html">Broken Links - Images</a>
+                <a href="updown.html">Upload and Download</a>
+                <a href="dynamic.html">Dynamic Properties</a>
+            </div>
+            <button class="dropdownbtn">Forms<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="#">Practice Form</a>
+            </div>
+            <button class="dropdownbtn">Dynamic X-Path<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="dynamicXpath.html">Dynamic X-Path</a>
+            </div>
+            <button class="dropdownbtn">Alerts, Frame & Windows<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="window.html">Browser Window</a>
+                <a href="alerts.html">Alerts</a>
+                <a href="frames.html">Frames</a>
+                <a href="nestedframes.html">Nested Frames</a>
+                <a href="modal.html">Modal Dialogs</a>
+            </div>
+            <button class="dropdownbtn">Widgets<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="datepicker.html">Data Picker</a>
+                <a href="tabs.html">Tabs</a>
+                <a href="tooltips.html">Tool Tips</a>
+                <a href="menu.html">Menu</a>
+                <a href="selectmenu.html">Select Menu</a>
+            </div>
+            <button class="dropdownbtn">Quiz<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="quiz.html">Example Quiz</a>
+                <a href="javaquiz.html">Java Primitive Quiz</a>
+                <a href="ifquiz.html">Java If Statement Quiz</a>
+            </div>
+        </div>
+
+        
+        <div class="maincontent">
+            <h2>Student Registration Form</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="fname">Name</label></td>
+                        <td><input type="text" id="fname" name="fname" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="female">Other</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile(10 digit)</label></td>
+                        <td><input type="number" id="mobile" name="mobile" placeholder="Mobile Number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input type="date" id="dob" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subjects">Subjects</label></td>
+                        <td><input type="text" id="subjects" name="subjects" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hobbies">Hobbies</label></td>
+                        <td><input type="checkbox" id="sports" name="hobbie" value="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="reading" name="hobbie" value="reading">
+                        <label for="reading">Reading</label>
+                        <input type="checkbox" id="music" name="hobbie" value="music">
+                        <label for="music">Music</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="selectpicture">Picture</label></td>
+                        <td><label for="picture">Select picture</label>
+                        <input type="file" id="picture" name="picture"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Current Address</label></td>
+                        <td><textarea id="address" name="address" value="address" placeholder="Current Address" rows="10" cols="50"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="stateandcity">State and City</label></td>
+                        <td><select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+                            <option value="" disabled selected>Choose State</option>
+                            <option>Haryana</option>
+                            <option>Karnataka</option>
+                            <option>Maharashtra</option>
+                            <option>NCR</option>
+                            <option>Rajasthan</option>
+                            <option>UttarPradesh</option>
+                        </select>
+                        <select id="citySelect" size="1" >
+                            <option value="" disabled selected>Choose City</option>
+                            <option></option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button id="submitbtn" name="submit" value="submit" onclick="AddRow();">Submit</td>
+                    </tr>
+                </table>
+            </form>
+            <table id="show">
+               
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>KnowledgeWare - Alerts, Frame & Windows - Modal Dialogs</title>
+        <link rel="stylesheet" href="forall.css">
+        <script src="dropdown.js" defer></script>
+        <script src="https://kit.fontawesome.com/4a0da9e824.js" crossorigin="anonymous"></script>
+        <style>
+        
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%;
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+                        
+            #myBtn{
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                background-color: green;
+                margin-top: 20px;
+                border-radius: 0.4rem;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="logodiv"><img src="KW.png" alt="Logo" id="logopic"></div>
+        <div class="add">
+            <div class="left">
+                <h2 class="sele">Selenium</h2>
+                <h2 class="certi">Certification Training</h2>
+                <div class="horline"></div>
+                <div class="option"><br>
+                    <p class="options">Live Instructor led Online Training</p>
+                    <p class="options2">Weekend Classes</p><br>
+                    <p class="options">Regular Assignments</p>
+                    <p class="options2">Lifetime access to Sessioin Recordings</p>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="join">
+                    <a href="tel:8698989276" class="joinref">JOIN NOW</a>
+                </div>
+                <div class="call"><a class="remove" href="tel:8698989276">Call: 8698989276</a></div>
+            </div>
+        </div>
+        <div class="subheading"><h1 id=textb>Modal Dialogs</h1></div>
+
+        <div class="sidenav">
+            <button class="dropdownbtn">Elements<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="index.html">Text Box</a>
+                <a href="check.html">Check Box</a>
+                <a href="radio.html">Radio Button</a>
+                <a href="web.html">X-Path</a>
+                <a href="button.html">Buttons</a>
+                <a href="links.html">Links</a>
+                <a href="broken.html">Broken Links - Images</a>
+                <a href="updown.html">Upload and Download</a>
+                <a href="dynamic.html">Dynamic Properties</a>
+            </div>
+            <button class="dropdownbtn">Forms<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="practiceform.html">Practice Form</a>
+            </div>
+            <button class="dropdownbtn">Dynamic X-Path<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="dynamicXpath.html">Dynamic X-Path</a>
+            </div>
+            <button class="dropdownbtn">Alerts, Frame & Windows<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="window.html">Browser Window</a>
+                <a href="alerts.html">Alerts</a>
+                <a href="frames.html">Frames</a>
+                <a href="nestedframes.html">Nested Frames</a>
+                <a href="#">Modal Dialogs</a>
+            </div>
+            <button class="dropdownbtn">Widgets<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="datepicker.html">Data Picker</a>
+                <a href="tabs.html">Tabs</a>
+                <a href="tooltips.html">Tool Tips</a>
+                <a href="menu.html">Menu</a>
+                <a href="selectmenu.html">Select Menu</a>
+            </div>
+            <button class="dropdownbtn">Quiz<i class="fa fa-caret-down"></i></button>
+            <div class="dropdowncontainer">
+                <a href="quiz.html">Example Quiz</a>
+                <a href="javaquiz.html">Java Primitive Quiz</a>
+                <a href="ifquiz.html">Java If Statement Quiz</a>
+            </div>
+        </div>
+
+        <div class="maincontent">
+            <label for="modal">Click on Button to see Modal</label><br>
+            <button id="myBtn">Open Modal</button>
+
+            <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>KnowledgeWare</h1>
+                <p>Established in 2015 as a IT Training Institute, KnowledgeWare (KW), is a professional body by a group of IT professionals who had a passion for teaching and who wanted to pass on the knowledge they had accumulated over a period of 15+ years to people who want to make a career in the IT industry.</p>
+            </div>
+
+            </div>
+
+            <script>
+            var modal = document.getElementById("myModal");
+
+            var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            </script>
+
+        </div>
+    </body>
+</html>

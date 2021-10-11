@@ -1,0 +1,306 @@
+h1 {
+    font-size: 25px;
+    margin: 15px 10px 10px 10px;
+    color: #259;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    text-align:center;
+}
+
+.example {
+  
+width: 60%;
+    border-top: 1px dashed #25E;
+    display: block;
+    float: left;
+   margin-left: 50px;
+  font-size: 20px; 
+
+  margin-top: -100px;
+
+}
+
+
+.overlay{
+    background:#fff url(overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+.overlay img{
+	padding-top:300px;
+	display: block;
+	margin: 0 auto;
+}
+.clear{
+	clear:both;
+}
+
+.errormsg{
+	padding-top:20px;
+	color:red;
+	text-align: center;
+}
+
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: 'Arial';
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+table tr:hover {
+  background: #f4f4f4;
+}
+table tr:hover td {
+  color: #555;
+}
+table th, table td {
+  color: #999;
+  border: 1px solid #eee;
+  padding: 10px 35px;
+  border-collapse: collapse;
+}
+table th {
+  background: #00cccc;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+table th.last {
+  border-right: none;
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+}
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+iframe{
+border:none;
+}
+
+
+
+
+
+
+
+
+
+body{
+  background-color: #cdecec;
+}
+.heading{
+  text-align: center;
+  color:rgb(79, 156, 243);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3.25rem;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#logopic{
+  width: 20%;
+
+  margin: 0;
+  padding: 0;
+}
+  
+.logodiv{
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+}
+.subheading{
+ 
+  margin-top: 0;
+  margin-bottom: 20px;
+ 
+  width: 100%;
+  text-align: center;
+  
+  opacity: 0.5;
+}
+
+#textb{
+
+  font-size: 2.25rem;
+  font-family: arial;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  margin-left: 450px;
+}
+
+
+.sidenav {
+  height: 85%;
+  width: 15%;
+  position: relative;
+  
+  top: 0;
+  left: 20px;
+  background-color: #ffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  float: left;
+  background-color: #cdecec;
+}
+
+.dropdownbtn, .sidenav a{
+  padding: 6px 8px 16px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(194, 194, 194);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  background-color: #034e52;
+  margin-top: 5px;
+}
+
+.dropdownbtn{
+  height: 80px;
+}
+
+.sidenav a:hover, .dropdownbtn:hover {
+  color: #f1f1f1;
+  
+}
+
+.active {
+  
+  color: white;
+}
+
+.dropdowncontainer {
+  display: none;
+  background-color: #034e52;
+  padding-left: 8px;
+  margin-top: -5px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.maincontent{
+  margin-left: 300px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+  margin-top: 50px;
+  width: 60%
+}
+
+
+
+
+.add{
+  width: 100%;
+  height:250px;
+  background-color: rgb(59, 59, 255);
+  margin-bottom: 20px;
+  display: block;
+  border-radius: 0.3rem;
+}
+.left{
+  color: white;
+  margin-left: 150px;
+  margin-top: 7px;
+  display: block;
+  float: left;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-radius: 10rem;
+  padding-right: 80px;
+  padding-left: 120px;
+}
+
+.sele,.certi{
+  display: block;
+  width: 300px;
+}
+.sele{
+  font-size: 3.5rem;
+  line-height: 0;
+  margin-top: 50px;
+  letter-spacing: 0.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.certi{
+  font-size: 2rem;
+  width: 400px;
+  line-height: 0;
+  margin-top: 50px;
+}
+.horline{
+  width:200px;
+  border-bottom: 2px solid white;
+}
+.options{
+  width: 225px;
+  display: block;
+  float: left;
+ 
+}
+.options2{
+  width: 225px;
+  display: block;
+  float: left;
+  margin-left: 30px;
+}
+.right{
+  margin-right: 200px;
+  float: right;
+  margin-bottom: 300px;
+}
+.joinref{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  border: 2px solid white;
+  padding: 1.25rem;
+  border-radius: 3rem;
+  background-color: rgb(46, 46, 139);
+
+}
+.join{
+  margin-left: 100px;
+  margin-top: 100px;
+  
+}
+.call{
+  margin-left: 135px;
+  margin-top: 40px;
+  color: white;
+  font-size: large;
+}
+.remove{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
